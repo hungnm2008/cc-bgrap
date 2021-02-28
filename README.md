@@ -6,3 +6,5 @@ The first purpose of this project is to implement and perform experiments with S
 [Moussawi 2020] Moussawi A.E., Seghouani N.B., Bugiotti F. (2020) A Graph Partitioning Algorithm for Edge or Vertex Balance. In: Hartmann S., Küng J., Kotsis G., Tjoa A.M., Khalil I. (eds) Database and Expert Systems Applications. DEXA 2020. Lecture Notes in Computer Science, vol 12391. Springer, Cham. https://doi.org/10.1007/978-3-030-59003-1_2
 
 [RUIZ 2020] Ricardo ROJAS RUIZ. Sampling-based Graph Partitioning for Real World Graphs, 2020.
+
+![Overview](overview.png)
