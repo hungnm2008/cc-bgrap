@@ -7,4 +7,4 @@ The first purpose of this project is to implement and perform experiments with S
 
 [RUIZ 2020] Ricardo ROJAS RUIZ. Sampling-based Graph Partitioning for Real World Graphs, 2020.
 
-![Overview](overview.png)
+![Overview](overview1.png)
