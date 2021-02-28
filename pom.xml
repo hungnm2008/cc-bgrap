@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>lri.modhel</groupId>
+	<artifactId>lri.modhel.adnanEM.SnapGpart</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.home>/usr/lib/jvm/java-8-openjdk-arm64</java.home>
+		<giraph.version>1.2.0</giraph.version>
+		<!-- <hadoop.version>0.20.203.0</hadoop.version> -->
+		<hadoop.version>1.2.1</hadoop.version>
+		<!-- <giraph.version>1.2.0-hadoop2</giraph.version> -->
+		<!-- <hadoop.version>2.5.1</hadoop.version> -->
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>jdk.tools</groupId>
+			<artifactId>jdk.tools</artifactId>
+			<version>1.8.0_261</version>
+			<scope>system</scope>
+			<systemPath>/usr/lib/jvm/java-8-openjdk-arm64/lib/tools.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>			
+			<artifactId>hadoop-core</artifactId>			
+			<!-- only for hadoop-2+-->
+			<!-- <artifactId>hadoop-common</artifactId> -->
+			<version>${hadoop.version}</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>org.apache.hadoop</groupId>			
+			<artifactId>hadoop-core</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency> -->
+		
+		<dependency>
+			<groupId>org.apache.giraph</groupId>
+			<artifactId>giraph-examples</artifactId>
+			<version>${giraph.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.giraph</groupId>
+			<artifactId>giraph-core</artifactId>
+			<version>${giraph.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>1.6</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.tinkerpop.rexster/rexster-server -->
+		<!-- <dependency>
+			<groupId>com.tinkerpop.rexster</groupId>
+			<artifactId>rexster-server</artifactId>
+			<version>2.6.0</version>
+		</dependency> -->
+		
+		<dependency>
+			<!-- jsoup HTML parser library @ https://jsoup.org/ -->
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.12.1</version>
+		</dependency>
+	</dependencies>
+</project>
